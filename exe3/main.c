@@ -10,7 +10,6 @@
     QueueHandle_t xQueueData;
     int dataList[5];
     int dataIndex = 0;
-    int sum = 0;
 
     // não mexer! Alimenta a fila com os dados do sinal
     void data_task(void *p) {
@@ -28,6 +27,7 @@
 
     void process_task(void *p) {
         int data = 0;
+        int sum = 0;
 
         while (true) {
             if (xQueueReceive(xQueueData, &data, pdMS_TO_TICKS(100))) {
