@@ -39,7 +39,7 @@
                     printf("%d\n",mediamovel);
                     dataIndex++;
                 } 
-                else if (dataIndex >= 5){
+                else {
                     dataList[0] = dataList[1];
                     dataList[1] = dataList[2];
                     dataList[2] = dataList[3];
