@@ -30,7 +30,7 @@
         int data = 0;
 
         while (true) {
-            if (xQueueReceive(xQueueData, &data, 100)) {
+            if (xQueueReceive(xQueueData, &data, pdMS_TO_TICKS(100))) {
                 // implementar filtro aqui!
                 if (dataIndex < 5){
                     dataList[dataIndex] = data;
