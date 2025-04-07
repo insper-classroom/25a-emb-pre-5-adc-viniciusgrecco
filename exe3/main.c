@@ -39,12 +39,12 @@
                     printf("%d\n",mediamovel);
                     dataIndex++;
                 } 
-                if (dataIndex >= 5){
+                else if (dataIndex >= 5){
                     dataList[0] = dataList[1];
                     dataList[1] = dataList[2];
                     dataList[2] = dataList[3];
                     dataList[3] = dataList[4];
-                    dataList[4] = data;
+                    dataList[4] = data;                         
                     int mediamovel = (dataList[0] + dataList[1] + dataList[2] + dataList[3] + dataList[4])/5;
                     printf("%d\n",mediamovel);
 
