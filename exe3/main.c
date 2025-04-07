@@ -8,6 +8,8 @@
 
 #include "data.h"
 QueueHandle_t xQueueData;
+int dataList[100];
+int dataIndex = 0;
 
 // não mexer! Alimenta a fila com os dados do sinal
 void data_task(void *p) {
@@ -29,6 +31,13 @@ void process_task(void *p) {
     while (true) {
         if (xQueueReceive(xQueueData, &data, 100)) {
             // implementar filtro aqui!
+            dataList[dataIndex] = data;
+            if (dataIndex >= 4){
+                int mediamovel = (dataList[dataIndex] + dataList[dataIndex-1] + dataList[dataIndex-2] + dataList[dataIndex-3] + dataList[dataIndex-4])/5;
+                printf("%d\n",mediamovel);
+            } 
+            dataIndex++;
+
 
 
 
