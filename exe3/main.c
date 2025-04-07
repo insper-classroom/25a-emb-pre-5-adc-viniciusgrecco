@@ -36,7 +36,7 @@ void process_task(void *p) {
                 dataIndex++;
             } 
             if (dataIndex >= 5){
-                int mediamovel = dataList[0] + dataList[1] + dataList[2] + dataList[3] + dataList[4];
+                int mediamovel = (dataList[0] + dataList[1] + dataList[2] + dataList[3] + dataList[4])/5;
                 printf("%d\n",mediamovel);
                 dataList[0] = dataList[1];
                 dataList[1] = dataList[2];
