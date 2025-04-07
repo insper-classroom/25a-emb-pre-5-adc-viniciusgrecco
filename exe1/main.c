@@ -27,7 +27,7 @@ void adc_1_task(void *p) {
         // CÓDIGO AQUI
         adc_select_input(0);
         result2 = adc_read();
-        printf("voltade 2: %f V\n", result2 * conversion_factor);
+        printf("voltage 2: %f V\n", result2 * conversion_factor);
 
 
 
