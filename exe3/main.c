@@ -42,8 +42,7 @@ void process_task(void *p) {
                 dataList[1] = dataList[2];
                 dataList[2] = dataList[3];
                 dataList[3] = dataList[4];
-                dataList[4] = dataList[dataIndex];
-                dataIndex++;
+                dataList[4] = data;
 
             }
 
