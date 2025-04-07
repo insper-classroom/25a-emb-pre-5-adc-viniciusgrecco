@@ -38,8 +38,7 @@
                     int mediamovel = sum/5;
                     printf("%d\n",mediamovel);
                     dataIndex++;
-                } 
-                else {
+                } else {
                     dataList[0] = dataList[1];
                     dataList[1] = dataList[2];
                     dataList[2] = dataList[3];
